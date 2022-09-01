@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-color: var(--background-color);
+    background-image: url('../images/outrun-neon-dark-background-purple-3840x2160-4523.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    width: 370px;
+    min-height: 530px;
+    border: 2px solid #E126D9;
+    overflow: hidden;
+}
+
+.cartao .perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.cartao .perfil img{
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid aquamarine;    
+}
+
+.cartao .conteudo{
+    background-color: rgb(37, 37, 37);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.cartao .informacoes-perfil{
+    padding: 15px;
+    text-align: center;
+    min-height: 270px;
+}
+
+
+.cartao .informacoes-perfil .titulo{
+    font-size: 22px;
+}
+
+
+.cartao .perfil .nome{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.cartao .perfil .idade,
+.cartao .perfil .ocupacao{
+    color: var(--text-color);
+}
+
+.cartao .abas{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;        
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    text-align: center;
+    background-color: var(--card-color);    
+    cursor: pointer;    
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.cartao .abas .aba:hover{    
+    background-color: rgb(65, 65, 65);    
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+}
+
+.cartao .abas img{
+    max-width: 30px;    
+}
+
+.informacoes-perfil .info{
+    display: none;    
+}
+
+.informacoes-perfil .info .sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacoes-perfil .info.selecionado{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.informacoes-perfil .info .descricao{
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.informacoes-perfil .info .descricao span{
+    color: #02d08f;
+}
+
+.informacoes-perfil .info .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+.informacoes-perfil .info .redes-sociais li{
+    width: 250px;
+}
+
+.informacoes-perfil .info .redes-sociais a{
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.informacoes-perfil .info .redes-sociais .curriculo{
+    background: #02d08f;
+}
+
+.informacoes-perfil .info .redes-sociais .linkedin{
+    background: #1D87BD;    
+}
+
+.informacoes-perfil .info .redes-sociais .github{
+    background: #545454;        
+}
+
+
+

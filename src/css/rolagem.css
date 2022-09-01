@@ -1,0 +1,20 @@
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #E126D9 var(--card-color);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--card-color);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #E126D9;
+    border-radius: 20px;
+    border: 3px solid var(--card-color);
+  }
