@@ -1,5 +1,5 @@
 const abas = document.querySelectorAll(".aba");
-const informacoes = document.querySelectorAll(".info");
+const informacoes = document.querySelectorAll(".informacao");
 
 abas.forEach((aba) => {
     aba.addEventListener("click", function () {

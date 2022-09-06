@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {	
+	background-image: url('../images/outrun-neon-dark-background-purple-3840x2160-4523.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	font-family: 'VT323', monospace;
+	font-size: 18px;
+	color: #f3f3f3;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 20px;
+}
+
+.cartao {
+	display: flex;
+	flex-direction: column;	
+	/* gap: 15px; */
+	background-color: var(--cor-cartao);
+	border-radius: 10px;
+	width: 370px;	
+	border: 2px solid var(--cor-primaria);
+	overflow: hidden; /* para as bordas de baixo do cartão ficarem arredondadas */
+}
+
+.cartao .perfil {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	gap: 10px;	
+    padding-top: 20px;
+}
+
+.cartao .perfil img {
+	border-radius: 50%;	
+	border: 4px solid var(--cor-secundaria);
+}
+
+.cartao .perfil .nome {	
+	font-size: 26px;
+}
+
+.cartao .perfil .cargo{
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+
+.cartao .conteudo {
+	background-color: var(--cor-fundo-conteudo);
+	margin-top: 15px;
+	width: 100%;
+}
+
+.cartao .abas {
+	display: flex;		
+}
+
+.cartao .abas .aba {
+	width: 50%;	
+	background-color: var(--cor-cartao);
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.cartao .abas .aba:hover {
+	background-color: rgb(65, 65, 65);
+}
+
+.cartao .abas .aba.selecionado {
+	background-color: var(--cor-fundo-conteudo);	
+}
+
+.cartao .abas img {
+	max-width: 30px;
+}
+
+.informacoes-perfil {
+	padding: 15px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.informacoes-perfil .sub-titulo {
+	font-size: 22px;
+}
+
+.informacoes-perfil .informacao {
+	display: none;
+    flex-direction: column;
+	gap: 25px;
+}
+
+.informacoes-perfil .informacao.selecionado {
+	display: flex;	
+}
+
+.informacao .descricao {
+	max-height: 200px;
+	overflow-y: auto;
+	text-align: left;
+	padding: 0 15px;
+	font-size: 20px;
+}
+
+.informacao .descricao span {
+	color: var(--cor-secundaria);
+}
+
+.redes-sociais {
+	display: flex;
+	flex-direction: column;	
+	gap: 25px;
+	align-items: center;
+}
+
+.redes-sociais li {
+	width: 250px;
+}
+
+.redes-sociais a {
+	padding: 10px;
+	color: #f3f3f3;
+	display: block;
+}
+
+.redes-sociais .curriculo {
+	background: #06c185;
+}
+
+.redes-sociais .linkedin {
+	background: #1d87bd;
+}
+
+.redes-sociais .github {
+	background: #545454;
+}

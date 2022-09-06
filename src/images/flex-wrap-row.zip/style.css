@@ -1,0 +1,17 @@
+ .container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     
+ }
+ .container div{
+    background-color: aqua;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+ }
+
+ h1{
+    color: red;
+ }

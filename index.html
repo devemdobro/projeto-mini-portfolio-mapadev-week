@@ -17,7 +17,7 @@
 
 		<link
 			rel="stylesheet"
-			href="./src/css/variables.css" />
+			href="./src/css/variaveis.css" />
 
 		<link
 			rel="stylesheet"
@@ -25,20 +25,20 @@
 
 		<link
 			rel="stylesheet"
-			href="./src/css/style.css" />
+			href="./src/css/estilos.css" />
 
 		<title>Projeto cartão</title>
 	</head>
 	<body>
 		<main class="container">
-			<div class="cartao">
-				<div class="perfil">
+			<section class="cartao">
+				<header class="perfil">
 					<img
 						src="./src/images/image-victor.jpg"
 						alt="Profile picture image" />
-					<p class="nome">Roberto Dias</p>
-					<span class="ocupacao">Desenvolvedor Frontend Júnior</span>
-				</div>
+					<h1 class="nome">Roberto Dias</h1>
+					<h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+				</header>
 
 				<div class="conteudo">
 					<ul class="abas">
@@ -55,20 +55,18 @@
 						</li>
 					</ul>
 
-					<ul class="informacoes-perfil">
-						<li class="info selecionado">
-							<div class="sobre">
-								<h2 class="titulo">Sobre</h1>
-								<p class="descricao">Oi! meu nome é Roberto Dias, seja bem-vindo(a)!
-                                    <br/><br/>
-                                    Sou uma pessoa apaixonada pela programação desde que eu tinha 15 anos.
-                                    Sempre tive o sonho de trabalhar com programação e atualmente comecei a colocar esse sonho em prática estudando <span>HTML, CSS e JavaScript.</span>
-                                    Gosto muito de café (até demais), e meus principais hobbies são jogar MMO Rpg, ver animes e séries.
-                                </p>
-							</div>
-						</li>
-						<li class="info">
-                            <h2 class="titulo">Minhas Redes</h2>
+					<div class="informacoes-perfil">
+						<div class="informacao selecionado">							
+							<h3 class="sub-titulo">Sobre</h3>
+							<p class="descricao">Oi! meu nome é Roberto Dias, seja bem-vindo(a)!
+								<br/><br/>
+								Sou uma pessoa apaixonada pela programação desde que eu tinha 15 anos.
+								Sempre tive o sonho de trabalhar com programação e atualmente comecei a colocar esse sonho em prática estudando <span>HTML, CSS e JavaScript.</span>
+								Gosto muito de café (até demais), e meus principais hobbies são jogar MMO Rpg, ver animes e séries.
+							</p>							
+						</div>
+						<div class="informacao">
+                            <h3 class="sub-titulo">Minhas Redes</h3>
 							<ul class="redes-sociais">								
 								<li>
 									<a
@@ -95,7 +93,7 @@
 									>
 								</li>
 							</ul>
-						</li>
+						</div>
 					</ul>
 				</div>
 			</div>

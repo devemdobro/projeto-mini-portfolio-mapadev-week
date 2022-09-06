@@ -1,7 +1,7 @@
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #E126D9 var(--card-color);
+    scrollbar-color: var(--cor-rolagem-primaria) var(--cor-rolagem-secundaria);
   }
   
   /* Works on Chrome, Edge, and Safari */
@@ -10,11 +10,11 @@
   }
   
   *::-webkit-scrollbar-track {
-    background: var(--card-color);
+    background: var(--cor-cartao);
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: #E126D9;
+    background-color: var(--cor-rolagem-primaria);
     border-radius: 20px;
-    border: 3px solid var(--card-color);
+    border: 3px solid var(--cor-rolagem-secundaria);
   }
