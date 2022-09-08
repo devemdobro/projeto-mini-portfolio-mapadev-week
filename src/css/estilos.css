@@ -144,3 +144,11 @@ body {
 .redes-sociais .github {
 	background: #545454;
 }
+
+.redes-sociais a{
+	transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais a:hover{
+	opacity: 0.8;
+}
