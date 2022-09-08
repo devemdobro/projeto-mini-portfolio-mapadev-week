@@ -1,13 +1,12 @@
-# Projeto cartão pessoal
+# Projeto Mini Portfólio
 
-Um projeto para a criação de um cartão com informações pessoais.
+Um projeto para a criação de um mini portfólio pra desenvolvedores iniciantes, com informações pessoais e links de redes sociais.
 
 #
 
 # Font family para utilização
 
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
+- Family: [VT323](https://fonts.googleapis.com/css2?family=VT323)
 
 # Linguagens
 
