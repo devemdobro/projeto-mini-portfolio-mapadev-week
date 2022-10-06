@@ -6,19 +6,15 @@ body {
 	font-family: 'VT323', monospace;
 	font-size: 18px;
 	color: #f3f3f3;
-}
 
-.container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
-	padding: 20px;
 }
 
 .cartao {
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	/* gap: 15px; */
 	background-color: var(--cor-cartao);
 	border-radius: 10px;
