@@ -87,11 +87,15 @@ body {
 }
 
 .informacao .descricao {
-	font-size: 20px;
-	text-align: left;
-	padding: 0 15px;
 	max-height: 200px;
 	overflow-y: auto;
+	padding: 0 15px;
+}
+
+.informacao .descricao p {
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 .informacao .descricao span {
