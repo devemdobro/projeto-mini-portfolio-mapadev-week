@@ -119,6 +119,7 @@ body {
 	width: 250px;
 	display: block;
 	color: #f3f3f3;
+	font-size: 20px;
 	text-align: center;
 	padding: 10px;
 	transition: opacity 0.3s ease-in-out;
