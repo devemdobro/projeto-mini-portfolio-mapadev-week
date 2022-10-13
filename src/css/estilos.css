@@ -1,7 +1,7 @@
-body {	
+body {
 	font-family: 'VT323', monospace;
 
-	background-image: url('../imagens/fundo-site.jpg');
+	background-image: url(../imagens/fundo-site.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -9,48 +9,48 @@ body {
 	color: #f3f3f3;
 	font-size: 18px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 	padding: 30px;
 }
 
 .cartao {
-	background-color: var(--cor-cartao);
-	border: 2px solid var(--cor-primaria);
+	background-color: #070d12;
 	width: 370px;
+	border: 2px solid #e126d9;
 	border-radius: 10px;
 	overflow: hidden;
 }
 
-.cartao .perfil {
-	padding-top: 20px;
- 	display: flex;
-	flex-direction: column;	
+.cartao .minhas-informacoes {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	gap: 10px;
 }
 
-.cartao .perfil img {
-	border-radius: 50%;	
-	border: 4px solid var(--cor-secundaria);
+.cartao .minhas-informacoes img {
+	border-radius: 50px;
+	border: 4px solid #02d08f;
 }
 
-.cartao .perfil .nome {	
+.cartao .minhas-informacoes .nome {
 	font-size: 26px;
 }
 
-.cartao .perfil .cargo{
-    font-size: 20px;
-    color: var(--cor-texto);
+.cartao .minhas-informacoes .cargo {
+	font-size: 20px;
+	color: #b8bbc5;
 }
 
-.cartao .conteudo {	
+.cartao .conteudo {
 	margin-top: 15px;
 }
 
 .cartao .abas {
-	display: flex;		
+	display: flex;
 }
 
 .cartao .abas .aba {
@@ -67,57 +67,62 @@ body {
 }
 
 .cartao .abas .aba.selecionado {
-	background-color: var(--cor-fundo-conteudo);	
+	background-color: #262626;
 }
 
 .cartao .abas .aba:hover {
 	background-color: #414141;
 }
 
-.informacoes-perfil{
-	background-color: var(--cor-fundo-conteudo);
-	padding: 15px;
-	text-align: center;
-	min-height: 280px;
+.informacoes-abas {
+	background-color: #262626;
 }
 
-.informacoes-perfil .sub-titulo {
+.informacoes-abas .informacao {
+	padding: 15px;
+	min-height: 260px;
+	display: none;
+}
+
+.informacoes-abas .sub-titulo {
 	font-size: 22px;
 	margin-bottom: 25px;
+	text-align: center;
 }
 
-.informacao .descricao {
-	max-height: 200px;
-	overflow-y: auto;
-	padding: 0 15px;
-}
-
-.informacao .descricao p {
+.informacoes-abas .descricao {
 	font-size: 20px;
-	text-align: left;
-	margin-bottom: 20px;
+	max-height: 180px;
+	overflow-y: auto;
+	padding-right: 15px;
+}
+
+.informacoes-abas .informacao.selecionado {
+	display: block;
 }
 
 .informacao .descricao span {
-	color: var(--cor-secundaria);
+	color: #02d08f;
 }
 
 .redes-sociais {
 	display: flex;
-	flex-direction: column;	
-	gap: 25px;	
+	flex-direction: column;
+	gap: 25px;
 	align-items: center;
+	max-height: 180px;
+	overflow-y: auto;
 }
 
-.redes-sociais li {
-	background-color: var(--cor-secundaria);
+.redes-sociais li a {
+	background-color: #02d08f;
 	width: 250px;
-}
-
-.redes-sociais a {	
-	color: #f3f3f3;
-	padding: 10px;
 	display: block;
+	color: #f3f3f3;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	transition: opacity 0.3s ease-in-out;
 }
 
 .redes-sociais .curriculo {
@@ -132,19 +137,6 @@ body {
 	background: #545454;
 }
 
-.redes-sociais a{
-	transition: opacity 0.3s ease-in-out;
-}
-
-.redes-sociais a:hover{
+.redes-sociais a:hover {
 	opacity: 0.8;
-}
-
-.informacoes-perfil .informacao {
-	display: none;	
-}
-
-.informacoes-perfil .informacao.selecionado {
-	display: block;
-
 }
