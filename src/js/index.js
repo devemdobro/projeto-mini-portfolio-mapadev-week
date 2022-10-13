@@ -7,7 +7,7 @@ abas.forEach((aba) => {
     if (aba.classList.contains("selecionado")) return;
 
     selecionarAba(aba);
-    mostrarAreaDeInformacoes(aba);
+    mostrarInformacoesDaAba(aba);
   });
 });
 
@@ -20,7 +20,7 @@ function selecionarAba(aba) {
   aba.classList.add("selecionado");
 }
 
-function mostrarAreaDeInformacoes(aba) {
+function mostrarInformacoesDaAba(aba) {
   const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`;
   const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
 
@@ -28,6 +28,6 @@ function mostrarAreaDeInformacoes(aba) {
   const informacaoSelecionada = document.querySelector(".informacao.selecionado");
   informacaoSelecionada.classList.remove("selecionado");
 
-  // passo 6 - fazer aparecer o conteúdo da aba selecionada
+  // passo 6 - mostrar o conteúdo da aba selecionada
   informacaoASerMostrada.classList.add("selecionado");
 }
