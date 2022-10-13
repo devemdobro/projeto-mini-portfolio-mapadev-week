@@ -1,31 +1,33 @@
+// passo 1 - dar um jeito de pegar os elementos que representam as abas no HTML
 const abas = document.querySelectorAll(".aba");
-const informacoes = document.querySelectorAll(".informacao");
 
 abas.forEach((aba) => {
-    aba.addEventListener("click", function () {
+  // passo 2 - dar um jeito de identificar o clique no elemento da aba
+  aba.addEventListener("click", function () {
+    if (aba.classList.contains("selecionado")) return;
 
-        const abaClicadaEstaSelecionado = aba.classList.contains("selecionado");
-        if(abaClicadaEstaSelecionado) return;
-
-        const abaSelecionada = document.querySelector('.selecionado');
-        abaSelecionada.classList.remove('selecionado');
-
-        informacoes.forEach((info) => {
-            const estaSelecionada = info.classList.contains("selecionado");
-            if (estaSelecionada) {                
-                esconderInformacoes(info);
-            } else {
-                aba.classList.add('selecionado');
-                mostrarInformacoes(info);
-            }
-        });
-    });
+    selecionarAba(aba);
+    mostrarAreaDeInformacoes(aba);
+  });
 });
 
-function esconderInformacoes(info) {
-    info.classList.remove("selecionado");
+function selecionarAba(aba) {
+  // passo 3 - desmarcar a aba selecionada
+  const abaSelecionada = document.querySelector(".selecionado");
+  abaSelecionada.classList.remove("selecionado");
+
+  // passo 4 - marcar a aba clicada como selecionado
+  aba.classList.add("selecionado");
 }
 
-function mostrarInformacoes(info) {
-    info.classList.add("selecionado");
+function mostrarAreaDeInformacoes(aba) {
+  const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`;
+  const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
+
+  // passo 5 - esconder o conteúdo anterior
+  const informacaoSelecionada = document.querySelector(".informacao.selecionado");
+  informacaoSelecionada.classList.remove("selecionado");
+
+  // passo 6 - fazer aparecer o conteúdo da aba selecionada
+  informacaoASerMostrada.classList.add("selecionado");
 }
