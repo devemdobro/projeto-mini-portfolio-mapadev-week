@@ -13,7 +13,7 @@ abas.forEach((aba) => {
 
 function selecionarAba(aba) {
   // passo 3 - desmarcar a aba selecionada
-  const abaSelecionada = document.querySelector(".selecionado");
+  const abaSelecionada = document.querySelector(".aba.selecionado");
   abaSelecionada.classList.remove("selecionado");
 
   // passo 4 - marcar a aba clicada como selecionado
